@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+body{
+    background: url("coffee_pics☕/coffee_one.jpeg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.595);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    color: white;
+    /* flex-direction: row-reverse; */
+    /* align-items: baseline; */
+}
+
+main #sec-1 h1{
+    font-size: 10vw;
+}
+
+
+main #sec-2 span{
+    font-size: 10vw;
+}
+
+main #sec-1{
+    display: flex;
+    flex-direction: column;
+}
+
+main #sec-1 button{
+    background-color: rgb(46, 29, 9);
+    border: none;
+    height: 10vh;
+    width: 40%;
+    color: beige;
+}
+
+main #sec-1 button:hover{
+    background-color: rgb(30, 19, 6);
+}
+
+main #sec-1 button:active{
+    border: solid white;
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+footer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.867);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form img{
+    display: none;
+}
+
+form{
+    width: 70%;
+    height: 70%;
+    background-color: rgb(21, 12, 2);
+}
+
+
+#formBar1{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(30, 19, 6);
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+#formBar1 img{
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+}
+
+#formBar1 input{
+    /* display: flex; */
+    height: 55%;
+}
+
+#formBar1 input[type="text"]{
+    padding-left: 1%;
+    width: 70%;
+}
+
+#formBar1 input[type="submit"]{
+    display: flex;
+    width: 10%;
+}
+
+#formBar2 {
+    width: 100%;
+    height: 90%;
+    padding: 10%;
+    /* padding: 10%; */
+}
+
+#formBar2Space{
+    background-color: rgba(0, 0, 0, 0.911);
+    height: inherit;
+    width: inherit;
+    display: flex;
+    grid-template-columns: repeat(4, 4fr);padding: 2%;
+}
+
+
+#formBar2Space img{
+    width: 3em;
+    width: inherit;
+    display: flex;
+}
+
+@media(max-width: 1000px){
+    #formBar2Space{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    #formBar2Space img{
+        width: 3em;
+        height: 3em;
+        border-radius: 2rem;
+    }
+}
+
+#formBar2Space img:hover{
+    opacity: 0.3;
+}
+
+footer{
+    display: none;
+    /* opacity: 0; */
+}
+
+.show-footer{
+    display: flex;
+    /* opacity: 1; */
+    animation: fadeIn 0.2s linear;
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
