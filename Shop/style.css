@@ -80,7 +80,7 @@ main #main-space{
     display: grid;
     grid-template-columns: repeat(3 ,3fr);
     gap: 2%;
-    overflow-x: scroll;
+    overflow: scroll;
     width: 100%;
     height: 100vh;
     padding: 10%;
